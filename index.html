@@ -5,34 +5,43 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>[SCORP HOST] 13.02:13.52 ⚡ HACK ALL IN 1</title>
 <style>
-   html, body { 
-    margin: 0; 
-    padding: 0; 
-    min-height: 100%;
-    background: #040a05 url('img.jpg') no-repeat center center fixed;
-    background-size: cover; 
-    color: #a2bba5;
-    font: 15px/1.45 "Segoe UI", system-ui, sans-serif; 
+    html, body { 
+    margin:0; 
+    padding:0; 
+    min-height:100%;
+    /* SHIFTS IMAGE DOWN 80px SO THE ENTIRE TAIL APPEARS CLEARLY UNDER THE HEADER */
+    background: #040a05 url('img.jpg') no-repeat center calc(50% + 40px) fixed;
+    background-size: cover;
+    /* CHANGED MAIN TEXT TO MATCHING NEON CYAN BLUE */
+    color:#a2bacb;
+    font:15px/1.45 "Segoe UI", system-ui, sans-serif; 
   }
-
   #wrap { padding:16px 18px; }
-  #state { font-size:22px; font-weight:700; margin:0 0 6px; color:#5cff7a; text-shadow:0 0 8px rgba(92,255,122,0.4); }
-  #det { font-size:13px; color:#68886d; margin:0 0 4px; }
-  #det b { color:#9effb2; font-weight:600; }
-  #cache { font-size:12px; color:#4a634e; margin:0 0 10px; min-height:14px; }
-  #cache.cacheok { color:#5cff7a; }
-  .ok { color:#5cff7a; } .bad { color:#ff6b6b; } .warn { color:#ffd05c; }
+  /* CYBER BLUE TITLE TEXT SHADOW GLOW */
+  #state { font-size:22px; font-weight:700; margin:0 0 6px; color:#5ce2ff; text-shadow:0 0 10px rgba(92,226,255,0.6); }
+  #det { font-size:13px; color:#687f88; margin:0 0 4px; }
+  #det b { color:#9ee8ff; font-weight:600; }
+  #cache { font-size:12px; color:#4a5c63; margin:0 0 10px; min-height:14px; }
+  #cache.cacheok { color:#5ce2ff; }
+  .ok { color:#5ce2ff; } .bad { color:#ff6b6b; } .warn { color:#ffd05c; }
   
-  #brand { text-align:center; padding:14px 10px; background:#08140a;
-           border-bottom:2px solid #16381c; box-shadow:0 2px 10px rgba(0,0,0,0.5); }
+  #brand { 
+    text-align:center; 
+    padding:14px 10px; 
+    /* MADE THE HEADER GLASS-TRANSPARENT SO THE GRAPHICS FLOW BEHIND IT SEAMLESSLY */
+    background: rgba(4, 10, 21, 0.65);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-bottom:2px solid #162a38; 
+    box-shadow:0 2px 10px rgba(0,0,0,0.5); 
+  }
   #brand img { width:80px; height:80px; margin-right:12px; border-radius:50%;
-               vertical-align:middle; border:2px solid #328040; display:inline-block; }
+               vertical-align:middle; border:2px solid #326d80; display:inline-block; }
 
-  /* Matrix neon green title style */
+  /* CHANGED BANNER TEXT TO MATCHING CYBER CYAN BLUE */
   #brand b { font-size:16px; font-weight:700; letter-spacing:.14em;
-             color:#5cff7a; vertical-align:middle; text-shadow:0 0 10px rgba(92,255,122,0.6); }
-  /* Matrix theme design signature */
-  #brand .credits { display:block; font-size:12px; color:#789c7f; 
+             color:#5ce2ff; vertical-align:middle; text-shadow:0 0 10px rgba(92,226,255,0.7); }
+  #brand .credits { display:block; font-size:12px; color:#78929c; 
                     margin-top:6px; font-weight:600; letter-spacing:0.08em; }
 </style>
 </head>
