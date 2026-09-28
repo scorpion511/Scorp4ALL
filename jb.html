@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>[SCORP HOST] 13.02:13.52 ⚡ HACK ALL IN 1</title>
     <style>
-            html,
+                 html,
       body {
         margin: 0;
         padding: 0;
         min-height: 100%;
-        background: #040a05;
-        color: #a2bba5;
+        /* SHIFTS LOGO BACKGROUND DOWN MATCHING YOUR MAIN INDEX PAGE */
+        background: #040a05 url('img.jpg') no-repeat center center fixed;
+        background-size: cover;
+        color: #a2bacb;
         font:
           15px/1.45 "Segoe UI",
           system-ui,
@@ -20,33 +22,36 @@
       #brand {
         text-align: center;
         padding: 14px 10px;
-        background: #08140a;
-        border-bottom: 2px solid #16381c;
+        /* TRANSPARENT BLUR GLASS EFFECT */
+        background: rgba(4, 10, 21, 0.65);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border-bottom: 2px solid #162a38;
         box-shadow: 0 2px 10px rgba(0,0,0,0.5);
       }
-        /* Logo resized to a clear 80px layout width */
+      /* Logo layout properties */
       #brand img { width:80px; height:80px; margin-right:12px; border-radius:50%;
-               vertical-align:middle; border:2px solid #328040; display:inline-block; }
-      /* Matrix neon green title style */
+               vertical-align:middle; border:2px solid #326d80; display:inline-block; }
+      
+      /* Cyber neon cyan blue title styles */
       #brand b {
         font-size: 16px;
         font-weight: 700;
         letter-spacing: 0.14em;
-        color: #5cff7a;
+        color: #5ce2ff;
         vertical-align: middle;
-        text-shadow: 0 0 10px rgba(92,255,122,0.6);
+        text-shadow: 0 0 10px rgba(92,226,255,0.7);
       }
-      /* Matrix theme design signature formatting */
       #brand .credits {
         display: block;
         font-size: 12px;
-        color: #789c7f;
+        color: #78929c;
         margin-top: 6px;
         font-weight: 600;
         letter-spacing: 0.08em;
       }
 
-      /* running: a spinner under the brand. jb.js sets body.done / body.fail / body.log. */
+      /* Loading spinner matched to neon cyan blue accents */
       #spin {
         position: fixed;
         top: calc(50% + 20px);
@@ -54,11 +59,11 @@
         width: 46px;
         height: 46px;
         margin: -23px 0 0 -23px;
-        border: 4px solid #16381c;
-        border-top-color: #5cff7a;
+        border: 4px solid #162a38;
+        border-top-color: #5ce2ff;
         border-radius: 50%;
         animation: spin 0.9s linear infinite;
-        box-shadow: 0 0 8px rgba(92,255,122,0.3);
+        box-shadow: 0 0 8px rgba(92,226,255,0.3);
       }
       @keyframes spin {
         to {
@@ -97,7 +102,7 @@
         display: block;
       }
 
-      /* ?log=1 -- the full step log, styled like the landing. */
+      /* Live exploit progress logs tracking box updated to match your new theme */
       body.log #spin,
       body.log #msg {
         display: none;
@@ -110,8 +115,8 @@
         font-size: 22px;
         font-weight: 700;
         margin: 0 0 8px;
-        color: #5cff7a;
-        text-shadow: 0 0 8px rgba(92,255,122,0.4);
+        color: #5ce2ff;
+        text-shadow: 0 0 8px rgba(92,226,255,0.4);
       }
       body.log #out {
         display: block;
@@ -119,16 +124,16 @@
         font:
           12px/1.45 Consolas,
           monospace;
-        background: #050d06;
-        border: 1px solid #16381c;
+        background: rgba(5, 11, 13, 0.85);
+        border: 1px solid #162a38;
         border-radius: 5px;
         padding: 10px 12px;
         height: calc(100vh - 141px);
         overflow-y: auto;
-        color: #a2bba5;
+        color: #a2bacb;
       }
       .ok {
-        color: #5cff7a;
+        color: #5ce2ff;
       }
       .bad {
         color: #ff6b6b;
@@ -137,13 +142,13 @@
         color: #ffd05c;
       }
       .safe {
-        color: #5cff7a;
+        color: #5ce2ff;
       }
       .danger {
         color: #ff6b6b;
       }
       code {
-        color: #9effb2;
+        color: #9ee8ff;
       }
     </style>
   </head>
